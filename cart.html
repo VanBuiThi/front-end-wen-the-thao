@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap 4 Website Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper page-home">
+        <div class="header">
+            <div class="top-link clearfix">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="nav topmenu-contact">
+                                <li class="nav-item" style="margin-top: 10px; font-size: 13px;">
+                                    <i class="fa fa-phone"></i> Hotline:0969012033
+                                </li>
+                            </ul>
+                            <ul class="nav justify-content-end">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Liên hệ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Kiểm tra đơn hàng</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="login.html">Đăng nhập</a>
+                                    <a class="nav-link" href="#">|</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="register.html">Đăng ký</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-content clearfix">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12 logo text-center">
+                            <a href="index.html" title="">
+                                <h1>BOSS shop</h1>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-5 col-xs-12 top-search">
+                            <div class="search">
+                                <div class="input-cat form-search clearfix">
+                                    <div class="form-search-controls  input-group ">
+                                        <input type="search" class="form-control  rounded-0" placeholder="Tìm kiếm"
+                                            style="color: white; ">
+                                        <button type="submit" class="btn rounded-0"><i
+                                                class="fa fa-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-12 top-cart  hidden-xs">
+                            <div class="cart" id="cart">
+                                <div class="heading">
+                                    <a href="cart.html">
+                                        <span class="icon-cart">
+                                            <i class="fa fa-cart-arrow-down"></i>
+                                            <div class="cart_num_container">
+                                                <div class="cart_num_inner">
+                                                    <div class="cart_num">
+                                                        <span class="badge badge-dark">0</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <script type="text/javascript">
+                $("#btnsearch").click(function () {
+                    SearchProduct();
+                });
+                $("#txtsearch").keydown(function (event) {
+                    if (event.keyCode == 13) {
+                        SearchProduct();
+                    }
+                });
+                function SearchProduct() {
+                    var key = $('#txtsearch').val();
+                    if (key == '' || key == 'Tìm kiếm...') {
+                        $('#txtsearch').focus();
+                        return;
+                    }
+                    window.location = '/tim-kiem.html?key=' + key;
+                }
+            </script> -->
+            <div class="menu-header">
+                <div class="container">
+                    <nav class="navbar navbar-expand-sm">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">TRANG CHỦ</a>
+                            </li>
+                            <li class="nav-item" style="background-color: #ff6c00;">
+                                <a class="nav-link" href="#">nam</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">nữ</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                    Phụ kiện thể thao
+                                </a>
+                                <div class="dropdown-menu drop-menu-header">
+                                    <a class="dropdown-item" href="category_clothing.html">Quần áo</a>
+                                    <a class="dropdown-item" href="category_clothing.html">phụ kiện khác</a>
+                                    <!-- <a class="dropdown-item" href="#">Bitis</a> -->
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+        <div class="main">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb container">
+                    <li class="breadcrumb-item" style="margin-left: 30px;"><a href="index.html">Trang chủ</a></li>
+                    <li class="breadcrumb-item" aria-current="page">Giỏ hàng</li>
+                </ol>
+            </nav>
+            <div class="container">
+                <div class="title-cart" style="margin-bottom: 50px;">
+                    <h3 style="text-align: center; text-transform: uppercase;">Giỏ hàng của bạn</h3>
+                </div>
+                <div class="cart_inner">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Sản phẩm</th>
+                                    <th scope="col">Đơn giá</th>
+                                    <th scope="col">Số lượng</th>
+                                    <th scope="col">Thành tiền</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="media">
+                                            <div class="d-flex">
+                                                <img src="images/footer4.jpg" alt="" width="70px" height="70px">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="detail-prod-cart">
+                                        <div class="media">
+                                            <div class="media-body">
+                                                <p>Minimalistic shop for multipurpose use</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="detail-prod-cart">
+                                        <div>
+                                            <p>1.000.000&nbsp;₫</p>
+                                        </div>
+
+                                    </td>
+                                    <td class="detail-prod-cart">
+                                        <div class="product_count">
+                                            <input type="number" name="qty" id="sst" maxlength="12" value="1" min="0"
+                                                title="Quantity:" class="" style="width: 70px;">
+
+                                        </div>
+                                    </td>
+                                    <td class="detail-prod-cart">
+                                        <p style="color: #ff6c00;">1.000.000&nbsp;₫</p>
+                                        <span><i class="fa fa-times-circle-o"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="media">
+                                            <div class="d-flex">
+                                                <img src="images/footer4.jpg" alt="" width="70px" height="70px">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="detail-prod-cart">
+                                        <div class="media">
+                                            <div class="media-body">
+                                                <p>Minimalistic shop for multipurpose use</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="detail-prod-cart">
+                                        <div>
+                                            <p>1.000.000&nbsp;₫</p>
+                                        </div>
+
+                                    </td>
+                                    <td class="detail-prod-cart">
+                                        <div class="product_count">
+                                            <input type="number" name="qty" id="sst" maxlength="12" value="1" min="0"
+                                                title="Quantity:" class="" style="width: 70px;">
+
+                                        </div>
+                                    </td>
+                                    <td class="detail-prod-cart">
+                                        <p style="color: #ff6c00;">1.000.000&nbsp;₫</p>
+                                        <span><i class="fa fa-times-circle-o"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <h4>Tổng tiền</h4>
+                                    </td>
+                                    <td>
+                                        <h4 style="color: #ff6c00;">1.000.000&nbsp;₫</h4>
+                                    </td>
+                                </tr>
+                                <!-- <tr class="shipping_area">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr> -->
+                                <!-- <tr class="out_button_area">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <div class="checkout_btn_inner d-flex align-items-center">
+                                            <button class="btn btn-primary" href="#">Tiếp tục mua hàng</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="checkout_btn_inner d-flex align-items-center">
+                                            <button class="btn btn-checkout" href="#">Thanh toán</button>
+                                        </div>
+
+                                    </td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="chinhsachmuahang" >
+                                     <h6 style="text-transform: uppercase; font-weight: bold; margin-bottom: 20px;">CHÍNH SÁCH ĐỔI/ TRẢ</h6>
+                                     <p>- Sản phẩm được đổi 1 lần duy nhất, không hỗ trợ trả.</p>
+                                     <p>- Sản phẩm còn đủ tem mác, chưa qua sử dụng.</p>
+                                     <p>- Sản phẩm nguyên giá được đổi trong 30 ngày trên toàn hệ thống.</p>
+                                     <p>- Sản phẩm sale chỉ hỗ trợ đổi size (nếu cửa hàng còn) trong 7 ngày trên toàn hệ thống.</p>
+                                </div>
+                               
+                            </div>
+                            <div class="col-md-6">
+                                <div class="checkout_btn_inner ">
+                                    <button class="btn btn-primary btn-continue"><a href="index.html">Tiếp tục mua hàng</a> </button>
+                                    <button class="btn btn-checkout"> <a href="thanhtoan.html"> Thanh toán</a></button>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="myBtn-backtotop" onclick="topFunction()" id="myBtn" title="Go to top"><i
+                    class="fa fa-arrow-up"></i></button>
+        </div>
+        <div style="margin-bottom:0;margin-top: 100px;">
+            <div class="footer">
+                <div>
+                    <p class="footer-top" style="text-align: center;">
+                        HASHTAG <b style="color: #ff6c00;">bossshop</b> ĐỂ CÓ CƠ HỘI XUẤT HIỆN TRÊN WEBSITE CỦA CHÚNG
+                        TÔI
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="images/footer1.jpg" style="width:100%" onclick="currentSlide(1)"
+                            alt="The Woods">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/footer2.jpg" style="width:100%" onclick="currentSlide(2)"
+                            alt="Cinque Terre">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/footer3.jpg" style="width:100%" onclick="currentSlide(3)"
+                            alt="Mountains and fjords">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/footer4.jpg" style="width:100%" onclick="currentSlide(4)"
+                            alt="Northern Lights">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/footer5.jpg" style="width:100%" onclick="currentSlide(5)"
+                            alt="Nature and sunrise">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/footer6.jpg" style="width:100%" onclick="currentSlide(6)"
+                            alt="Snowy Mountains">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/footer7.jpg" style="width:100%" onclick="currentSlide(7)"
+                            alt="Snowy Mountains">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/footer8.jpg" style="width:100%" onclick="currentSlide(8)"
+                            alt="Snowy Mountains">
+                    </div>
+                </div>
+                <div class="footer-content clearfix" style="background-color: black;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer-box col-md-3 col-sm-12 col-xs-12">
+                                <div class="item">
+                                    <h3>
+                                        <span>Giới thiệu</span>
+                                    </h3>
+                                    <div class="toggle-footer">
+                                        <ul>
+                                            <li>
+                                                <a href="/gioi-thieu.html">
+                                                    Về ch&#250;ng t&#244;i
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/gioi-thieu.html">
+                                                    Lĩnh vực hoạt động
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/content/hoi-dap.html">
+                                                    Hỏi đ&#225;p
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/content/quy-che-hoat-dong.html">
+                                                    Quy chế hoạt động
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/content/tuyen-dung.html">
+                                                    Tuyển dụng
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-box col-md-3 col-sm-12 col-xs-12">
+                                <div class="item">
+                                    <h3>
+                                        <span>Trợ gi&#250;p</span>
+                                    </h3>
+                                    <div class="toggle-footer">
+                                        <ul>
+                                            <li>
+                                                <a href="/content/huong-dan-thanh-toan.html">
+                                                    Hướng dẫn thanh to&#225;n
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/content/quy-dinh-doi-tra.html">
+                                                    Quy định đổi trả
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/content/chinh-sach-ban-hang.html">
+                                                    Ch&#237;nh s&#225;ch b&#225;n h&#224;ng
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/content/chinh-sach-bao-mat.html">
+                                                    Ch&#237;nh s&#225;ch bảo mật
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/content/quy-dinh-thao-luan.html">
+                                                    Quy định thảo luận
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-box box-address col-md-3 col-sm-12 col-xs-12">
+                                <div class="item">
+                                    <h3>
+                                        Thông tin công ty
+                                    </h3>
+                                    <div class="box-address-content toggle-footer">
+                                        <b>Bùi Thị Vân</b>
+                                        <p><i class="fa fa-map-marker"></i> ĐH Giao thông vận tải Hà Nội</p>
+                                        <p>
+                                            <i class="fa fa-envelope"></i>
+                                            <a href="mailto:info@runtime.vn">info@runtime.vn</a>
+                                        </p>
+                                        <p>
+                                            <i class="fa fa-phone"></i>
+                                            Phone: 0969012033
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-box box-social col-md-3 col-sm-12 col-xs-12">
+                                <div class="item">
+                                    <h3>
+                                        boss shop
+                                    </h3>
+                                    <div class="toggle-footer">
+                                        <div class="fb-like-box" data-href="https://www.facebook.com/runtime.vn"
+                                            data-width="289" data-height="190" data-colorscheme="dark"
+                                            data-show-faces="true" data-header="false" data-stream="false"
+                                            data-show-border="false">
+                                        </div>
+                                        <div class="social-icon">
+                                            <ul>
+                                                <li><a target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                                <li><a href="https://www.facebook.com/runtime.vn" target="_blank"><i
+                                                            class="fa fa-facebook fb-social"
+                                                            style="margin-left: 3px;"></i></a></li>
+                                                <li><a target="_blank"><i class="fa fa-youtube"></i></a></li>
+                                                <li><a target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () { scrollFunction() };
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        <script src="js/script1.js"></script>
+
+</body>
+
+</html>

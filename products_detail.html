@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap 4 Website Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-picZoomer.css">
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="src/jquery.picZoomer.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.picZoomer').picZoomer();
+
+            $('.piclist li').on('click', function (event) {
+                var $pic = $(this).find('img');
+                $('.picZoomer-pic').attr('src', $pic.attr('src'));
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="wrapper page-home">
+        <div class="header">
+            <div class="top-link clearfix">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="nav topmenu-contact">
+                                <li class="nav-item" style="margin-top: 10px; font-size: 13px;">
+                                    <i class="fa fa-phone"></i> Hotline:0969012033
+                                </li>
+                            </ul>
+                            <ul class="nav justify-content-end">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Liên hệ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Kiểm tra đơn hàng</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="login.html">Đăng nhập</a>
+                                    <a class="nav-link" href="#">|</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="register.html">Đăng ký</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-content clearfix">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12 logo text-center">
+                            <a href="index.html" title="">
+                                <h1>BOSS shop</h1>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-5 col-xs-12 top-search">
+                            <div class="search">
+                                <div class="input-cat form-search clearfix">
+                                    <div class="form-search-controls  input-group ">
+                                        <input type="search" class="form-control  rounded-0" placeholder="Tìm kiếm"
+                                            style="color: white; ">
+                                        <button type="submit" class="btn rounded-0"><i
+                                                class="fa fa-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-12 top-cart  hidden-xs">
+                            <div class="cart" id="cart">
+                                <div class="heading">
+                                    <a href="cart.html">
+                                        <span class="icon-cart">
+                                            <i class="fa fa-cart-arrow-down"></i>
+                                            <div class="cart_num_container">
+                                                <div class="cart_num_inner">
+                                                    <div class="cart_num">
+                                                        <span class="badge badge-dark">0</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <script type="text/javascript">
+                $("#btnsearch").click(function () {
+                    SearchProduct();
+                });
+                $("#txtsearch").keydown(function (event) {
+                    if (event.keyCode == 13) {
+                        SearchProduct();
+                    }
+                });
+                function SearchProduct() {
+                    var key = $('#txtsearch').val();
+                    if (key == '' || key == 'Tìm kiếm...') {
+                        $('#txtsearch').focus();
+                        return;
+                    }
+                    window.location = '/tim-kiem.html?key=' + key;
+                }
+            </script> -->
+            <div class="menu-header">
+                <div class="container">
+                    <nav class="navbar navbar-expand-sm">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">TRANG CHỦ</a>
+                            </li>
+                            <li class="nav-item" style="background-color: #ff6c00;">
+                                <a class="nav-link" href="#">nam</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">nữ</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                    Phụ kiện thể thao
+                                </a>
+                                <div class="dropdown-menu drop-menu-header">
+                                    <a class="dropdown-item" href="category_clothing.html">Quần áo</a>
+                                    <a class="dropdown-item" href="category_clothing.html">phụ kiện khác</a>
+                                    <!-- <a class="dropdown-item" href="#">Bitis</a> -->
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+        <div class="main">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb container">
+                    <li class="breadcrumb-item" style="margin-left: 30px;"><a href="index.html">Trang chủ</a></li>
+                    <li class="breadcrumb-item"><a href="category_man.html">Nam</a></li>
+                    <li class="breadcrumb-item" aria-current="page">Giày</li>
+                </ol>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div>
+                            <div class="picZoomer">
+                                <img src="images/111_c78f37af57ad47cd91d87cd9d2af84d3_master.jpg" height="" width=""
+                                    alt="">
+                            </div>
+
+                            <ul class="piclist">
+                                <li><img src="images/111_c78f37af57ad47cd91d87cd9d2af84d3_master.jpg" alt=""></li>
+                                <li><img src="images/743de8a06a63f3fd7f78726a1f31ac08.png" alt=""></li>
+                                <li><img src="images/111_c78f37af57ad47cd91d87cd9d2af84d3_master.jpg" alt=""></li>
+                                <li><img src="images/3.jpg" alt=""></li>
+                                <li><img src="images/4.jpg" alt=""></li>
+                                <li><img src="images/5.jpg" alt=""></li>
+                                <li><img src="images/6.jpg" alt=""></li>
+                                <li><img src="images/7.jpg" alt=""></li>
+                                <li><img src="images/8.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="s_product_text">
+                            <h3>Faded SkyBlu Denim Jeans</h3>
+                            <h2>1.000.000&nbsp;₫</h2>
+                            <hr>
+                            <div class="product_detail-color">
+                                <label for="qty">Màu sắc:</label>
+                                <span> <img src="images/111_c78f37af57ad47cd91d87cd9d2af84d3_master.jpg" alt="">
+                                    Kem</span>
+
+                            </div>
+                            <div class="product_detail-size">
+                                <label for="kichthuoc">Kích thước:</label>
+                                <span data-value="40" class="title title-2 swatch-element  available active"> 40</span>
+                                <span data-value="40" class="title title-2 swatch-element  available"> 40</span>
+                                <span data-value="40" class="title title-2 swatch-element  available"> 40</span>
+
+                            </div>
+                            <div class="product_detail-status">
+                                <label for="conhang">Còn hàng:</label>
+                                <span> <strong>40</strong> Sản phẩm</span>
+                            </div>
+                            <hr>
+                            <div class="product_detail_quantity">
+                                <label for="quantity">Số lượng:</label>
+                                <input type="number" id="quantity" name="quantity" min="1" max="5" value="1">
+                            </div>
+                            <div class="addtocart-button">
+                                <a href="">
+                                    <button type="button" class="btn btn-mua-hang" style="width: 400px;">Mua hàng
+                                        &nbsp;
+                                        <i class="fa fa-shopping-basket"></i>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#home">Mô tả</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div id="home" class="container tab-pane active"><br>
+                            <h3>Mô tả sản phẩm</h3>
+                            <p>Hàng chính hãng.</p>
+                            <p>Hàng chính hãng.</p>
+                            <p>Giao hàng toàn quốc.</p>
+                            <p>Được kiểm hàng trước khi thanh toán.</p>
+                            <p>Kam kết bảo hành trọn đời sản phẩm.</p>
+                        </div>
+                        <div id="menu1" class="container tab-pane fade"><br>
+                            <h3>Menu 1</h3>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat.</p>
+                        </div>
+                        <div id="menu2" class="container tab-pane fade"><br>
+                            <h3>Menu 2</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sanphamlienquan">
+                    <div class="new-products" style="margin-top:70px">
+                        <div class="top-new-products">
+                            <a href="">
+                                <h2>Sản phẩm liên quan</h2>
+                            </a>
+                            <hr width="30%" size="10px" color="#ff6c00" />
+
+                        </div>
+                        <div class="main-products">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-3 col-xs-6 product-resize product-item-box"
+                                        style="margin-top: 30px; margin-bottom: 30px;">
+                                        <div class="product-item">
+                                            <div class="image image-resize" style="background-color: #ff6c00;">
+                                                <a href="products_detail.html" title="DTOLCE LOUNGE CHAIR PLYWOOD">
+                                                    <img src="images/111_c78f37af57ad47cd91d87cd9d2af84d3_master.jpg"
+                                                        class="img-thumbnail" alt="Cinque Terre" width="304"
+                                                        height="236">
+                                                </a>
+                                                <div class="box-label">
+                                                    <span>
+                                                        <img src="images/icon-new-2.png" alt="">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="right-block">
+                                                <h6 class="name">
+                                                    <a href="/san-pham/dtolce-lounge-chair-plywood.html"
+                                                        title="DTOLCE LOUNGE CHAIR PLYWOOD">DTOLCE LOUNGE CHAIR
+                                                        PLYWOOD</a>
+                                                </h6>
+                                                <div class="price">
+                                                    <span class="price-new">6.800.000&nbsp;₫</span>
+                                                </div>
+                                                <div class="addtocart-button clearfix">
+                                                    <a href="">
+                                                        <button type="button" class="btn btn-block btn-mua-hang">Mua
+                                                            hàng
+                                                            &nbsp;
+                                                            <i class="fa fa-shopping-basket"></i>
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-6 product-resize product-item-box"
+                                        style="margin-top: 30px; margin-bottom: 30px;">
+                                        <div class="product-item">
+                                            <div class="image image-resize" style="background-color: #ff6c00;">
+                                                <a href="/san-pham/dtolce-lounge-chair-plywood.html"
+                                                    title="DTOLCE LOUNGE CHAIR PLYWOOD">
+                                                    <img src="images/111_c78f37af57ad47cd91d87cd9d2af84d3_master.jpg"
+                                                        class="img-thumbnail" alt="Cinque Terre" width="304"
+                                                        height="236">
+                                                    <div class="box-label">
+                                                        <span>
+                                                            <img src="images/icon-new-2.png" alt="">
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="right-block">
+                                                <h6 class="name">
+                                                    <a href="/san-pham/dtolce-lounge-chair-plywood.html"
+                                                        title="DTOLCE LOUNGE CHAIR PLYWOOD">DTOLCE LOUNGE CHAIR
+                                                        PLYWOOD</a>
+                                                </h6>
+                                                <div class="price">
+                                                    <span class="price-new">6.800.000&nbsp;₫</span>
+                                                </div>
+                                                <div class="addtocart-button clearfix">
+                                                    <a href="">
+                                                        <button type="button" class="btn btn-block btn-mua-hang">Mua
+                                                            hàng
+                                                            &nbsp;
+                                                            <i class="fa fa-shopping-basket"></i>
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-6 product-resize product-item-box"
+                                        style="margin-top: 30px; margin-bottom: 30px;">
+                                        <div class="product-item">
+                                            <div class="image image-resize" style="background-color: #ff6c00;">
+                                                <a href="/san-pham/dtolce-lounge-chair-plywood.html"
+                                                    title="DTOLCE LOUNGE CHAIR PLYWOOD">
+                                                    <img src="images/111_c78f37af57ad47cd91d87cd9d2af84d3_master.jpg"
+                                                        class="img-thumbnail" alt="Cinque Terre" width="304"
+                                                        height="236">
+                                                    <div class="box-label">
+                                                        <span>
+                                                            <img src="images/icon-new-2.png" alt="">
+                                                        </span>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                            <div class="right-block">
+                                                <h6 class="name">
+                                                    <a href="/san-pham/dtolce-lounge-chair-plywood.html"
+                                                        title="DTOLCE LOUNGE CHAIR PLYWOOD">DTOLCE LOUNGE CHAIR
+                                                        PLYWOOD</a>
+                                                </h6>
+                                                <div class="price">
+                                                    <span class="price-new">6.800.000&nbsp;₫</span>
+                                                </div>
+                                                <div class="addtocart-button clearfix">
+                                                    <a href="">
+                                                        <button type="button" class="btn btn-block btn-mua-hang">Mua
+                                                            hàng
+                                                            &nbsp;
+                                                            <i class="fa fa-shopping-basket"></i>
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-6 product-resize product-item-box"
+                                        style="margin-top: 30px; margin-bottom: 30px;">
+                                        <div class="product-item">
+                                            <div class="image image-resize" style="background-color: #ff6c00;">
+                                                <a href="/san-pham/dtolce-lounge-chair-plywood.html"
+                                                    title="DTOLCE LOUNGE CHAIR PLYWOOD">
+                                                    <img src="images/111_c78f37af57ad47cd91d87cd9d2af84d3_master.jpg"
+                                                        class="img-thumbnail" alt="Cinque Terre" width="304"
+                                                        height="236">
+                                                    <div class="box-label">
+                                                        <span>
+                                                            <img src="images/icon-new-2.png" alt="">
+                                                        </span>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                            <div class="right-block">
+                                                <h6 class="name">
+                                                    <a href="/san-pham/dtolce-lounge-chair-plywood.html"
+                                                        title="DTOLCE LOUNGE CHAIR PLYWOOD">DTOLCE LOUNGE CHAIR
+                                                        PLYWOOD</a>
+                                                </h6>
+                                                <div class="price">
+                                                    <span class="price-new">6.800.000&nbsp;₫</span>
+                                                </div>
+                                                <div class="addtocart-button clearfix">
+                                                    <a href="">
+                                                        <button type="button" class="btn btn-block btn-mua-hang">Mua
+                                                            hàng
+                                                            &nbsp;
+                                                            <i class="fa fa-shopping-basket"></i>
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div>
+        <button class="myBtn-backtotop" onclick="topFunction()" id="myBtn" title="Go to top"><i
+                class="fa fa-arrow-up"></i></button>
+    </div>
+    <div style="margin-bottom:0;margin-top: 100px;">
+        <div class="footer">
+            <div class="footer-top">
+                <p class="" style="text-align: center;margin-bottom: 14px;">
+                    HASHTAG <b style="color: #ff6c00;">bossshop</b> ĐỂ CÓ CƠ HỘI XUẤT HIỆN TRÊN WEBSITE CỦA CHÚNG
+                    TÔI
+                </p>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="images/footer1.jpg" style="width:100%" onclick="currentSlide(1)"
+                        alt="The Woods">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/footer2.jpg" style="width:100%" onclick="currentSlide(2)"
+                        alt="Cinque Terre">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/footer3.jpg" style="width:100%" onclick="currentSlide(3)"
+                        alt="Mountains and fjords">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/footer4.jpg" style="width:100%" onclick="currentSlide(4)"
+                        alt="Northern Lights">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/footer5.jpg" style="width:100%" onclick="currentSlide(5)"
+                        alt="Nature and sunrise">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/footer6.jpg" style="width:100%" onclick="currentSlide(6)"
+                        alt="Snowy Mountains">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/footer7.jpg" style="width:100%" onclick="currentSlide(7)"
+                        alt="Snowy Mountains">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/footer8.jpg" style="width:100%" onclick="currentSlide(8)"
+                        alt="Snowy Mountains">
+                </div>
+            </div>
+            <div class="footer-content clearfix" style="background-color: black;">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-box col-md-3 col-sm-12 col-xs-12">
+                            <div class="item">
+                                <h3>
+                                    <span>Giới thiệu</span>
+                                </h3>
+                                <div class="toggle-footer">
+                                    <ul>
+                                        <li>
+                                            <a href="/gioi-thieu.html">
+                                                Về ch&#250;ng t&#244;i
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/gioi-thieu.html">
+                                                Lĩnh vực hoạt động
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/content/hoi-dap.html">
+                                                Hỏi đ&#225;p
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/content/quy-che-hoat-dong.html">
+                                                Quy chế hoạt động
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/content/tuyen-dung.html">
+                                                Tuyển dụng
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-box col-md-3 col-sm-12 col-xs-12">
+                            <div class="item">
+                                <h3>
+                                    <span>Trợ gi&#250;p</span>
+                                </h3>
+                                <div class="toggle-footer">
+                                    <ul>
+                                        <li>
+                                            <a href="/content/huong-dan-thanh-toan.html">
+                                                Hướng dẫn thanh to&#225;n
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/content/quy-dinh-doi-tra.html">
+                                                Quy định đổi trả
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/content/chinh-sach-ban-hang.html">
+                                                Ch&#237;nh s&#225;ch b&#225;n h&#224;ng
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/content/chinh-sach-bao-mat.html">
+                                                Ch&#237;nh s&#225;ch bảo mật
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/content/quy-dinh-thao-luan.html">
+                                                Quy định thảo luận
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-box box-address col-md-3 col-sm-12 col-xs-12">
+                            <div class="item">
+                                <h3>
+                                    Thông tin công ty
+                                </h3>
+                                <div class="box-address-content toggle-footer">
+                                    <b>Bùi Thị Vân</b>
+                                    <p><i class="fa fa-map-marker"></i> ĐH Giao thông vận tải Hà Nội</p>
+                                    <p>
+                                        <i class="fa fa-envelope"></i>
+                                        <a href="mailto:info@runtime.vn">info@runtime.vn</a>
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-phone"></i>
+                                        Phone: 0969012033
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-box box-social col-md-3 col-sm-12 col-xs-12">
+                            <div class="item">
+                                <h3>
+                                    boss shop
+                                </h3>
+                                <div class="toggle-footer">
+                                    <div class="fb-like-box" data-href="https://www.facebook.com/runtime.vn"
+                                        data-width="289" data-height="190" data-colorscheme="dark"
+                                        data-show-faces="true" data-header="false" data-stream="false"
+                                        data-show-border="false">
+                                    </div>
+                                    <div class="social-icon">
+                                        <ul>
+                                            <li><a target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a href="https://www.facebook.com/runtime.vn" target="_blank"><i
+                                                        class="fa fa-facebook fb-social"
+                                                        style="margin-left: 3px;"></i></a>
+                                            </li>
+                                            <li><a target="_blank"><i class="fa fa-youtube"></i></a></li>
+                                            <li><a target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <script src="js/script1.js"></script>
+
+</body>
+
+
+</html>
